@@ -1,0 +1,274 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: #181818;
+	color: white;
+	
+	
+
+}
+
+#first-div{
+	position:absolute;
+	left: 50%;
+	top: 50%;
+	padding: 10px;
+	transform: translate(-50%, -50%);
+	display: flex;
+	
+}
+
+#btn1{
+	
+	width: 260px;
+	height: 300px;
+	background-image: url(Images/cave-painting.png);
+	background-repeat: no-repeat;
+	background-size: 250px 250px;
+	background-color: #181818;
+	display: inline-block;
+	position: relative;
+	right: 80px;
+	
+	
+	
+  }
+  #btn2{
+
+  
+	width: 260px;
+	height: 300px;
+	background-image: url(Images/document.png);
+	background-repeat: no-repeat;
+	background-size: 250px 250px;
+	background-color: #181818;
+	display: inline-block;
+	position: relative;
+	right: 60px;
+
+	
+  }
+  
+  #btn3{
+	
+	width: 260px;
+	height: 300px;
+	background-image: url(Images/scissors-opened-tool-shape.png);
+	background-repeat: no-repeat;
+	background-size: 250px 250px;
+	background-color: #181818;
+	display: inline-block;
+	position: relative;
+	right: 40px;
+	
+  }
+
+#second-div{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 400px;
+	left: 300px;
+	margin: -35px 0 0 -35px;
+	display: flex;
+}
+
+#paragraph1{
+	font-size: 25px;
+	font-family: sans-serif;
+	position: relative;
+	right: 40px;
+	
+	
+  }
+  
+  #paragraph2{
+	font-size: 25px;
+	font-family: sans-serif;
+	position: relative;
+	left: 50px;
+	
+  
+  }
+
+  #paragraph3{
+	font-size: 25px;
+	font-family: sans-serif;
+	position: relative;
+	top: 60px;
+	right: 140px;
+	
+	
+  
+  }
+  
+  #paragraph4{
+	font-size: 25px;
+	font-family: sans-serif;
+	position: relative;
+	top: 60px;
+	left: 15px;
+	
+  
+  }
+
+
+ #btn1::after{
+	content: "";
+	border-radius: 5px;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 5px 15px rgba(238, 224, 224, 0.3);
+	opacity: 0;
+	-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+ }
+ #btn1:hover{
+	-webkit-transform: scale(1.03, 1.03);
+	transform: scale(1.03, 1.03);
+ }
+ #btn1:hover::after{
+	 opacity: 1;
+ }
+
+ #btn2::after{
+	content: "";
+	border-radius: 5px;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 5px 15px rgba(238, 224, 224, 0.3);
+	opacity: 0;
+	-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+ }
+
+ #btn2:hover{
+	-webkit-transform: scale(1.03, 1.03);
+	transform: scale(1.03, 1.03);
+
+ }
+
+ #btn2:hover::after{
+	 opacity: 1;
+ }
+
+ #btn3::after{
+	content: "";
+	border-radius: 5px;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 5px 15px rgba(238, 224, 224, 0.3);
+	opacity: 0;
+	-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+ }
+
+ #btn3:hover{
+	-webkit-transform: scale(1.03, 1.03);
+	transform: scale(1.03, 1.03);
+
+ }
+
+ #btn3:hover::after{
+	 opacity: 1;
+ }
+
+
+
+
+ #first-p{
+	font-size: 27px;
+	font-family: sans-serif;
+	position: absolute;
+	display: inline-block;
+	top: 300px; 
+	left: 180px;
+}
+#winningP{
+	
+
+	font-weight: 700;
+  	text-align: center;
+  	font-size: 40px;
+  	font-family: Hack, sans-serif;
+  	text-transform: uppercase;
+  	background: linear-gradient(90deg, #fff, #fff, #000);
+  	letter-spacing: 5px;
+  	-webkit-background-clip: text;
+  	background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	background-repeat: no-repeat;
+  	background-size: 80%;
+  	animation: shine 5s linear infinite;
+  	position: relative;
+	
+  
+  }
+  @keyframes shine {
+	  0%{
+		  background-position-x: -500%;
+		  color: #FF9900;
+	  }
+	  100%{
+		  background-position-x: 500%;
+		  color: #FF9900;
+	  }
+	  
+  }
+  
+  #losingP{
+	  
+	  font-weight: 700;
+  	  text-align: center;
+  	  font-size: 40px;
+  	  font-family: Hack, sans-serif;
+  	  text-transform: uppercase;
+  	  background: linear-gradient(90deg, #fff, #fff, #000);
+  	  letter-spacing: 5px;
+      -webkit-background-clip: text;
+  	  background-clip: text;
+  	  -webkit-text-fill-color: transparent;
+  	  background-repeat: no-repeat;
+  	  background-size: 80%;
+  	  animation: shine 5s linear infinite;
+  	  position: relative;
+
+
+	
+  }
+  
+  .resetbutton{
+	position: absolute;
+	top: 200px;
+	left: 320px;
+	border: 2px solid #4CAF50;
+	color: white;
+	padding: 15px 32px;
+	text-align: center; 
+	display: inline-block;
+	font-size: 16px;
+	background-color: black;
+	transition-duration: 0.4s;
+  }
+  
+  .resetbutton:hover{
+	background-color: #4CAF50;
+	color: white;
+  }
+
+  
